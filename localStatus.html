@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<title>Dot Matrix Status</title>
+		<!-- Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="assets/css/screen.css" />
+
+		<!-- JavaScript -->
+		<script src="assets/scripts/jquery.min.js"></script>
+		<script src="assets/scripts/formPost.js"></script>
+		<script src="assets/scripts/customSelect.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="chromotion">
+				<div class="chromotion-hd">
+					<div class="carouselWrapper">
+						<ul class="carousel">
+							<li>
+								<span class="member member_zn"></span>
+								<input class="field field_radioOverlay" name="boxArtist" value="zn" type="radio" />
+							<li>
+								<span class="member member_zz"></span>
+								<input class="field field_radioOverlay" name="boxArtist" value="zz" type="radio" />
+							<li>
+								<span class="member member_lg"></span>
+								<input class="field field_radioOverlay" name="boxArtist" value="lg" type="radio" />
+							<li>
+								<span class="member member_gz"></span>
+								<input class="field field_radioOverlay" name="boxArtist" value="gz" type="radio" />
+							<li>
+								<span class="member member_cd"></span>
+								<input class="field field_radioOverlay" name="boxArtist" value="cd" type="radio" />
+							<li>
+								<span class="member member_jj"></span>
+								<input class="field field_radioOverlay" name="boxArtist" value="jj" type="radio" />
+							<li>
+								<span class="member member_pf"></span>
+								<input class="field field_radioOverlay" name="boxArtist" value="pf" type="radio" />
+							<li>
+								<span class="member member_yn"></span>
+								<input class="field field_radioOverlay" name="boxArtist" value="yn" type="radio" />
+							<li>
+								<span class="member member_cj"></span>
+								<input class="field field_radioOverlay" name="boxArtist" value="cj" type="radio" />
+						</ul>
+					</div>
+				</div>
+				<div class="chromotion-bd">
+					<ul class="vList status">
+						<li class="status-item js-status-item">
+							<span class="circle circle_green"></span>
+							<label class="status-item-content" for="status" data-value="Available">Available</label>
+						</li>
+						<li class="status-item js-status-item">
+							<span class="circle circle_blue"></span>
+							<label class="status-item-content" for="status" data-value="WFH">Work @ Home</label>
+						</li>
+						<li class="status-item js-status-item">
+							<span class="circle circle_purple"></span>
+							<label class="status-item-content" for="status" data-value="Meeting">In A Meeting</label>
+						</li>
+						<li class="status-item js-status-item">
+							<span class="circle circle_darkBlue"></span>
+							<label class="status-item-content" for="status" data-value="Sick">Sick</label>
+						</li>
+						<li class="status-item js-status-item">
+							<span class="circle circle_yellow"></span>
+							<label class="status-item-content" for="status" data-value="Need Help">Help!</label>
+						</li>
+						<li class="status-item js-status-item">
+							<span class="circle circle_red"></span>
+							<label class="status-item-content" for="status" data-value="Busy">Busy</label>
+						</li>
+					</ul>
+					<form id="statusUpdate" method="post">
+						<fieldset class="isHidden">
+							<legend>Select a Status</legend>
+							<select name="initials">
+								<option value="zn" selected>Zack</option>
+								<option value="zz">Michael</option>
+								<option value="lg">Logan</option>
+								<option value="gz">Andrew</option>
+								<option value="cd">Mandi</option>
+								<option value="jj">Jake</option>
+								<option value="pf">Christopher</option>
+								<option value="yn">Yana</option>
+								<option value="cj">Claire</option>
+							</select>
+						</fieldset>
+						<fieldset class="isHidden">
+							<legend>Select a Member's Status</legend>
+							<select id="status" class="js-status" name="status">
+								<option>Available</option>
+								<option>WFH</option>
+								<option>Meeting</option>
+								<option>Sick</option>
+								<option>Need Help</option>
+								<option>Busy</option>
+							</select>
+						</fieldset>
+						<input id="sendStatus" type="button" value="Update Status" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

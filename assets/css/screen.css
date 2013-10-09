@@ -1,0 +1,252 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1.0; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ---------------------------------------------------------------------
+ Utilities
+------------------------------------------------------------------------ */
+.isHidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+}
+
+/* ---------------------------------------------------------------------
+ Wrappers
+------------------------------------------------------------------------ */
+.wrapper { width: 304px; }
+
+.carouselWrapper {
+    overflow: hidden;
+    width: 222px;
+    height: 100px;
+}
+
+/* ---------------------------------------------------------------------
+ Chromotion
+------------------------------------------------------------------------ */
+.chromotion {
+    padding: 20px 0 0 0;
+    height: 554px;
+    box-sizing: border-box;
+    text-align: center;
+    background: transparent url('../images/bg.jpg') 0 0 / 100% no-repeat;
+}
+
+.chromotion > * { display: inline-block; }
+
+.chromotion-hd { margin-bottom: 20px; }
+
+.chromotion-bd {}
+
+/* ---------------------------------------------------------------------
+ Horizontal List
+------------------------------------------------------------------------ */
+.hList {}
+
+.hList > * {
+	display: inline-block;
+	font-size: 0;
+}
+
+/* ---------------------------------------------------------------------
+ Vertical List
+------------------------------------------------------------------------ */
+.vList {}
+
+.vList { margin-bottom: 2px; }
+
+/* ---------------------------------------------------------------------
+ Circle
+------------------------------------------------------------------------ */
+.circle {
+    margin: 10px 15px;
+    border-radius: 25px;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+/* naming needs context */
+.circle_green { background-color: #57b79b; }
+
+.circle_blue { background-color: #4c9cd9; }
+
+.circle_purple { background-color: #9165b5; }
+
+.circle_darkBlue { background-color: #374a5d; }
+
+.circle_yellow { background-color: #ecc12d; }
+
+.circle_red { background-color: #d75845; }
+
+/* ---------------------------------------------------------------------
+ Carousel
+------------------------------------------------------------------------ */
+.carousel {
+    width: 9999px;
+    overflow: hidden;
+    height: inherit;
+}
+
+.carousel > * {
+    width: 222px;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+.carousel > * > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* ---------------------------------------------------------------------
+ Member
+------------------------------------------------------------------------ */
+.member {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background: #ffffff bottom center / 140% no-repeat;
+}
+
+.member_cd { background-image: url(http://nerdery.com/system/nerds/normal/cd.png); }
+.member_cj { background-image: url(http://nerdery.com/system/nerds/normal/cj.png); }
+.member_gz { background-image: url(http://nerdery.com/system/nerds/normal/gz.png); }
+.member_jj { background-image: url(http://nerdery.com/system/nerds/normal/jj.png); }
+.member_lg { background-image: url(http://nerdery.com/system/nerds/normal/lg.png); }
+.member_pf { background-image: url(http://nerdery.com/system/nerds/normal/pf.png); }
+.member_yn { background-image: url(http://nerdery.com/system/nerds/normal/yn.png); }
+.member_zn { background-image: url(http://nerdery.com/system/nerds/normal/zn.png); }
+.member_zz { background-image: url(http://nerdery.com/system/nerds/normal/zz.png); }
+
+/* ---------------------------------------------------------------------
+ Field
+------------------------------------------------------------------------ */
+.field { margin: 0; }
+
+.field_radioOverlay {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.field[type="radio"]:checked { /* needs active state styles */ }
+
+/* ---------------------------------------------------------------------
+ Status
+------------------------------------------------------------------------ */
+.status {
+    overflow: hidden;
+    text-align: left;
+}
+
+.status-item {
+    margin-bottom: 1px;
+    width: 220px;
+    height: 44px;    
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #ffffff;
+}
+
+.status-item > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.status-item:hover { background: #f2f2f2; }
+
+.status-item-content { font: 500 18px/1.0 "stratum2_rgregular", serif; }
+
+/* ---------------------------------------------------------------------
+ Fonts
+------------------------------------------------------------------------ */
+@font-face {
+    font-family: 'stratum2_bdbold';
+    src: url('../fonts/stratum2-bold-webfont.eot');
+    src: url('../fonts/stratum2-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/stratum2-bold-webfont.woff') format('woff'),
+         url('../fonts/stratum2-bold-webfont.ttf') format('truetype'),
+         url('../fonts/stratum2-bold-webfont.svg#stratum2_bdbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'stratum2_mdregular';
+    src: url('../fonts/stratum2-medium-webfont.eot');
+    src: url('../fonts/stratum2-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/stratum2-medium-webfont.woff') format('woff'),
+         url('../fonts/stratum2-medium-webfont.ttf') format('font/opentype'),
+         url('../fonts/stratum2-medium-webfont.svg#stratum2_mdregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'stratum2_rgregular';
+    src: url('../fonts/stratum2-regular-webfont.eot');
+    src: url('../fonts/stratum2-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/stratum2-regular-webfont.woff') format('woff'),
+         url('../fonts/stratum2-regular-webfont.ttf') format('truetype'),
+         url('../fonts/stratum2-regular-webfont.svg#stratum2_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
