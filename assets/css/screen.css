@@ -51,7 +51,7 @@ table {
 }
 
 .button { 
-    font: 800 20px/1.0 "stratum2_rgregular", serif;
+    font: 500 20px/1.0 "stratum2_rgregular", serif;
     margin-bottom: 1px;
     width: 220px;
     height: 44px;    
@@ -263,7 +263,7 @@ table {
 
 .accordion-item {
     margin-bottom: 1px;
-    padding: 10px 0;
+    padding: 15px 0;
     width: 220px;
     height: 44px;
     box-sizing: border-box;
@@ -277,7 +277,7 @@ table {
 }
 
 .accordion-item-content {
-    font: 500 22px/1.0 "stratum2_rgregular", serif;
+    font: 500 18px/1.0 "stratum2_rgregular", serif;
     text-transform: uppercase;
 }
 
