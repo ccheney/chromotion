@@ -254,20 +254,25 @@ table {
  Accordion
 ------------------------------------------------------------------------ */
 .accordion {
-    padding: 10px 0;
     width: 220px;
     height: auto;
-    box-sizing: border-box;
     cursor: pointer;
     text-align: center;
-    background: #ffffff;
 }
 
 .accordion-item {
+    margin-bottom: 1px;
+    padding: 10px 0;
     width: 220px;
-    height: 44px;    
+    height: 44px;
+    box-sizing: border-box;
     cursor: pointer;
     background: #ffffff;
+}
+
+.accordion-item > * {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .accordion-item-content {
