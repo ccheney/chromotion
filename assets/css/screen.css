@@ -40,10 +40,28 @@ q:after {
     content: none;
 }
 
+input, textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+.button { 
+	font: 800 20px/1.0 "stratum2_rgregular", serif;
+	margin-bottom: 1px;
+    width: 220px;
+    height: 44px;    
+    text-transform: uppercase;
+    border: 0;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.button:hover {	background: #f2f2f2;	}
 
 /* ---------------------------------------------------------------------
  Utilities
@@ -63,7 +81,7 @@ table {
 /* ---------------------------------------------------------------------
  Wrappers
 ------------------------------------------------------------------------ */
-.wrapper { width: 304px; }
+.wrapper { width: 320px; }
 
 .carouselWrapper {
     overflow: hidden;
@@ -103,7 +121,7 @@ table {
 ------------------------------------------------------------------------ */
 .vList {}
 
-.vList > * { margin-bottom: 1px; }
+.vList { margin-bottom: 2px; }
 
 /* ---------------------------------------------------------------------
  Circle
@@ -198,6 +216,7 @@ table {
 }
 
 .status-item {
+    margin-bottom: 1px;
     width: 220px;
     height: 44px;    
     text-transform: uppercase;
@@ -208,6 +227,7 @@ table {
 .status-item > * {
     display: inline-block;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 .status-item:hover { background: #f2f2f2; }
