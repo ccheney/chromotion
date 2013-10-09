@@ -49,29 +49,35 @@
 				</div>
 				<div class="chromotion-bd">
 					<ul class="vList status">
-						<li class="status-item js-status-item">
-							<span class="circle circle_green"></span>
-							<label class="status-item-content" for="status" data-value="Available">Available</label>
-						</li>
-						<li class="status-item js-status-item">
-							<span class="circle circle_blue"></span>
-							<label class="status-item-content" for="status" data-value="WFH">Work @ Home</label>
-						</li>
-						<li class="status-item js-status-item">
-							<span class="circle circle_purple"></span>
-							<label class="status-item-content" for="status" data-value="Meeting">In A Meeting</label>
-						</li>
-						<li class="status-item js-status-item">
-							<span class="circle circle_darkBlue"></span>
-							<label class="status-item-content" for="status" data-value="Sick">Sick</label>
-						</li>
-						<li class="status-item js-status-item">
-							<span class="circle circle_yellow"></span>
-							<label class="status-item-content" for="status" data-value="Need Help">Help!</label>
-						</li>
-						<li class="status-item js-status-item">
-							<span class="circle circle_red"></span>
-							<label class="status-item-content" for="status" data-value="Busy">Busy</label>
+						<li class="accordion js-accordion">
+							<span class="accordion-item-content js-accordion-value">Select a Status</span>
+							<span class="icon icon_arrowDown"></span>
+							<ul class="status accordion-list js-accordion-list">
+								<li class="status-item js-status-item">
+									<span class="circle circle_green"></span>
+									<label class="status-item-content" for="status" data-value="Available">Available</label>
+								</li>
+								<li class="status-item js-status-item">
+									<span class="circle circle_blue"></span>
+									<label class="status-item-content" for="status" data-value="WFH">Work @ Home</label>
+								</li>
+								<li class="status-item js-status-item">
+									<span class="circle circle_purple"></span>
+									<label class="status-item-content" for="status" data-value="Meeting">In A Meeting</label>
+								</li>
+								<li class="status-item js-status-item">
+									<span class="circle circle_darkBlue"></span>
+									<label class="status-item-content" for="status" data-value="Sick">Sick</label>
+								</li>
+								<li class="status-item js-status-item">
+									<span class="circle circle_yellow"></span>
+									<label class="status-item-content" for="status" data-value="Need Help">Help!</label>
+								</li>
+								<li class="status-item js-status-item">
+									<span class="circle circle_red"></span>
+									<label class="status-item-content" for="status" data-value="Busy">Busy</label>
+								</li>
+							</ul>
 						</li>
 					</ul>
 					<form id="statusUpdate" method="post">

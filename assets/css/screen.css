@@ -106,6 +106,21 @@ table {
 .vList > * { margin-bottom: 1px; }
 
 /* ---------------------------------------------------------------------
+ Icon
+------------------------------------------------------------------------ */
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+.icon_arrowDown {
+    width: 15px;
+    height: 10px;
+    background: transparent url(../images/icon_arrowDown.png) 0 0 no-repeat;
+}
+
+/* ---------------------------------------------------------------------
  Circle
 ------------------------------------------------------------------------ */
 .circle {
@@ -199,8 +214,7 @@ table {
 
 .status-item {
     width: 220px;
-    height: 44px;    
-    text-transform: uppercase;
+    height: 44px;
     cursor: pointer;
     background: #ffffff;
 }
@@ -212,8 +226,37 @@ table {
 
 .status-item:hover { background: #f2f2f2; }
 
-.status-item-content { font: 500 18px/1.0 "stratum2_rgregular", serif; }
+.status-item-content {
+    font: 500 18px/1.0 "stratum2_rgregular", serif;
+    text-transform: uppercase;
+}
 
+/* ---------------------------------------------------------------------
+ Accordion
+------------------------------------------------------------------------ */
+.accordion {
+    padding: 10px 0;
+    width: 220px;
+    height: auto;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    background: #ffffff;
+}
+
+.accordion-item {
+    width: 220px;
+    height: 44px;    
+    cursor: pointer;
+    background: #ffffff;
+}
+
+.accordion-item-content {
+    font: 500 22px/1.0 "stratum2_rgregular", serif;
+    text-transform: uppercase;
+}
+
+.accordion > .accordion-list { display: none; }
 /* ---------------------------------------------------------------------
  Fonts
 ------------------------------------------------------------------------ */
