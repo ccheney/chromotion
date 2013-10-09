@@ -103,7 +103,7 @@ table {
 ------------------------------------------------------------------------ */
 .vList {}
 
-.vList { margin-bottom: 2px; }
+.vList > * { margin-bottom: 1px; }
 
 /* ---------------------------------------------------------------------
  Circle
@@ -198,7 +198,6 @@ table {
 }
 
 .status-item {
-    margin-bottom: 1px;
     width: 220px;
     height: 44px;    
     text-transform: uppercase;
