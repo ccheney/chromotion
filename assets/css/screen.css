@@ -256,6 +256,7 @@ table {
 .accordion {
     width: 220px;
     height: auto;
+    margin-bottom: 5px;
     cursor: pointer;
     text-align: center;
 }
