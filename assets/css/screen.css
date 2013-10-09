@@ -135,6 +135,7 @@ table {
 .icon_arrowDown {
     width: 15px;
     height: 10px;
+    margin-left: 10px;
     background: transparent url(../images/icon_arrowDown.png) 0 0 no-repeat;
 }
 
