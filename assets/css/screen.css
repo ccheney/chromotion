@@ -227,37 +227,6 @@ table {
     vertical-align: middle;
 }
 
-/* zw */
-.carousel {
-    margin-bottom: 200px;
-    position: relative;
-}
-
-.carousel-slide-wrapper { overflow: hidden; }
-
-.carousel-slide-list {
-    font-size: 0;
-    white-space: nowrap;
-    -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-}
-
-.carousel-slide-list > * {
-    display: inline-block;
-    width: 100%;
-    font-size: 14px;
-    vertical-align: top;
-}
-
-.carousel-btn { display: none; }
-
-.carousel-btn-prev_isActive { display: block; }
-
-.carousel-btn-next_isActive { display: block; }
-
 /* ---------------------------------------------------------------------
  Member
 ------------------------------------------------------------------------ */
