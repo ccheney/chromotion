@@ -5,7 +5,8 @@ $(function(){
 
     $(".js-status-item").click(function () {
         var value = $(this).children("label").attr("data-value");
+        var innerValue = $(this).children("label").html();
         $(".js-status").val(value);
-        $(".js-accordion-value").text(value);
+        $(".js-accordion-value").text(innerValue);
     });
 });

@@ -11,8 +11,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -23,7 +23,7 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section { display: block; }
 
 body { line-height: 1.0; }
@@ -42,26 +42,21 @@ q:after {
 
 input, textarea {
   -webkit-appearance: none;
+     -moz-appearance: none;
+      -ms-appearance: none;
+       -o-appearance: none;
+          appearance: none;
   -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+      -ms-border-radius: 0;
+       -o-border-radius: 0;
+          border-radius: 0;
 }
 
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-.button { 
-    font: 500 20px/1.0 "stratum2_rgregular", serif;
-    margin-bottom: 1px;
-    width: 220px;
-    height: 44px;    
-    text-transform: uppercase;
-    border: 0;
-    background: #ffffff;
-    cursor: pointer;
-}
-
-.button:hover { background: #f2f2f2;    }
 
 /* ---------------------------------------------------------------------
  Utilities
@@ -133,6 +128,10 @@ button { display: none !important; }
     display: inline-block;
     vertical-align: middle;
     font-size: 0;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 .icon_arrowDown {
@@ -145,6 +144,7 @@ button { display: none !important; }
 .icon_arrowLeft {
     width: 10px;
     height: 15px;
+    display: none;
     position: absolute;
     cursor: pointer;
     top: 45px;
@@ -156,6 +156,7 @@ button { display: none !important; }
 .icon_arrowRight {
     width: 10px;
     height: 15px;
+    display: none;
     position: absolute;
     cursor: pointer;
     top: 45px;
@@ -163,6 +164,25 @@ button { display: none !important; }
     z-index: 2;
     background: transparent url(../images/icon_arrowRight.png) 0 0 no-repeat;
 }
+
+.carousel-btn-next_isActive,
+.carousel-btn-prev_isActive { display: inline-block; }
+
+/* ---------------------------------------------------------------------
+ Button
+------------------------------------------------------------------------ */
+.button {
+    font: 500 20px/1.0 "stratum2_rgregular", serif;
+    margin-bottom: 1px;
+    width: 220px;
+    height: 44px;
+    text-transform: uppercase;
+    border: 0;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.button:hover { background: #f2f2f2; }
 
 /* ---------------------------------------------------------------------
  Circle
@@ -221,6 +241,10 @@ button { display: none !important; }
     font-size: 0;
     white-space: nowrap;
     -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
 }
 
 .carousel-slide-list > * {
@@ -244,8 +268,12 @@ button { display: none !important; }
     width: 100px;
     height: 100px;
     display: inline-block;
-    -webkit-filter: grayscale(100%);
     background: #ffffff bottom center / 140% no-repeat;
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+            filter: grayscale(100%);
 }
 
 .member_cd { background-image: url(http://nerdery.com/system/nerds/normal/cd.png); }
@@ -268,13 +296,20 @@ button { display: none !important; }
     width: 100px;
     height: 100px;
     opacity: 0;
+    cursor: pointer;
     position: absolute;
     right: 0;
     left: 0;
     z-index: 1;
 }
 
-.field[type="radio"]:checked + .member { /* needs active state styles */-webkit-filter: grayscale(0); }
+.field[type="radio"]:checked + .member {
+    -webkit-filter: grayscale(0);
+       -moz-filter: grayscale(0);
+        -ms-filter: grayscale(0);
+         -o-filter: grayscale(0);
+            filter: grayscale(0);
+}
 
 /* ---------------------------------------------------------------------
  Status
