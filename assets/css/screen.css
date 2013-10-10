@@ -85,6 +85,7 @@ table {
 
 .carouselWrapper {
     overflow: hidden;
+    position: relative;
     width: 222px;
     height: 100px;
 }
@@ -123,6 +124,8 @@ table {
 
 .vList > * { margin-bottom: 1px; }
 
+button { display: none !important; }
+
 /* ---------------------------------------------------------------------
  Icon
 ------------------------------------------------------------------------ */
@@ -137,6 +140,28 @@ table {
     height: 10px;
     margin-left: 10px;
     background: transparent url(../images/icon_arrowDown.png) 0 0 no-repeat;
+}
+
+.icon_arrowLeft {
+    width: 10px;
+    height: 15px;
+    position: absolute;
+    cursor: pointer;
+    top: 45px;
+    left: 0;
+    z-index: 2;
+    background: transparent url(../images/icon_arrowLeft.png) 0 0 no-repeat;
+}
+
+.icon_arrowRight {
+    width: 10px;
+    height: 15px;
+    position: absolute;
+    cursor: pointer;
+    top: 45px;
+    right: 0;
+    z-index: 2;
+    background: transparent url(../images/icon_arrowRight.png) 0 0 no-repeat;
 }
 
 /* ---------------------------------------------------------------------
@@ -184,6 +209,33 @@ table {
     vertical-align: middle;
 }
 
+/* zw */
+.carousel {
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.carousel-slide-wrapper { overflow: hidden; }
+
+.carousel-slide-list {
+    font-size: 0;
+    white-space: nowrap;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.carousel-slide-list > * {
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.carousel-btn { display: none; }
+
+.carousel-btn-prev_isActive { display: block; }
+
+.carousel-btn-next_isActive { display: block; }
+
 /* ---------------------------------------------------------------------
  Member
 ------------------------------------------------------------------------ */
@@ -192,6 +244,7 @@ table {
     width: 100px;
     height: 100px;
     display: inline-block;
+    -webkit-filter: grayscale(100%);
     background: #ffffff bottom center / 140% no-repeat;
 }
 
@@ -221,7 +274,7 @@ table {
     z-index: 1;
 }
 
-.field[type="radio"]:checked { /* needs active state styles */ }
+.field[type="radio"]:checked + .member { /* needs active state styles */-webkit-filter: grayscale(0); }
 
 /* ---------------------------------------------------------------------
  Status

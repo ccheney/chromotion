@@ -3,6 +3,7 @@ $(function(){
     $( "#sendStatus" ).click(function() {
         var $form = $('#statusUpdate');
         var serializedData = $form.serialize();
+        console.log(serializedData);
         $.ajax({
             url: "http://www.panthersweat.com/dash/updateStatus.php",
             type: "post",
