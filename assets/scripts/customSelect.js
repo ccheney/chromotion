@@ -1,6 +1,6 @@
 $(function(){
     $(".js-accordion").click(function () {
-        $(".js-accordion-list").toggle();
+        $(".js-accordion-list").stop().toggle();
     });
 
     $(".js-status-item").click(function () {

@@ -271,6 +271,11 @@ table {
 }
 
 .field[type="radio"]:checked + .member {
+    -webkit-transition: all .3s linear;
+       -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+         -o-transition: all .3s linear;
+            transition: all .3s linear;
     -webkit-filter: grayscale(0);
        -moz-filter: grayscale(0);
         -ms-filter: grayscale(0);
@@ -297,6 +302,10 @@ table {
     display: inline-block;
     vertical-align: middle;
     cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 .status-item:hover { background: #f2f2f2; }
@@ -325,6 +334,10 @@ table {
     box-sizing: border-box;
     cursor: pointer;
     background: #ffffff;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 .accordion-item > * {
