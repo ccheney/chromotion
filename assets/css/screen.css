@@ -210,16 +210,17 @@ table {
  Carousel
 ------------------------------------------------------------------------ */
 .carousel {
-    width: 9999px;
-    overflow: hidden;
-    height: inherit;
+    font-size: 0;
+    white-space: nowrap;
+    -webkit-transform: translate3d(0, 0, 0);
 }
 
 .carousel > * {
-    width: 222px;
-    float: left;
+    display: inline-block;
     position: relative;
+    width: 222px;
     text-align: center;
+    vertical-align: top;
 }
 
 .carousel > * > * {
@@ -235,6 +236,8 @@ table {
     width: 100px;
     height: 100px;
     display: inline-block;
+    position: relative;
+    z-index: 1;
     background: #ffffff bottom center / 140% no-repeat;
     -webkit-filter: grayscale(100%);
        -moz-filter: grayscale(100%);
@@ -267,7 +270,7 @@ table {
     position: absolute;
     right: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .field[type="radio"]:checked + .member {

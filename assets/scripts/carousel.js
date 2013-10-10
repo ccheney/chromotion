@@ -334,7 +334,7 @@ STATUS.Carousel = function($) {
         if (!this.isSwipeReady) {
             this.bounce();
 
-            return false;
+            return;
         }
 
         if (this.dragDirection === 'left') {
