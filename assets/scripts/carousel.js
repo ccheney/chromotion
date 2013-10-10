@@ -378,15 +378,6 @@ STATUS.Carousel = function($) {
 
         this.totalSlides = Math.round(this.$slides.length / visibleSlides);
 
-        this.$wrapper.append(
-            '<button class="' + this.options.buttonClass + ' ' + this.options.buttonPrevClass + '">' +
-                'previous' +
-            '</button>' +
-            '<button class="' + this.options.buttonClass + ' ' + this.options.buttonNextClass + '">' +
-                'next' +
-            '</button>'
-        );
-
         this.$prevButton = this.$wrapper.find('.' + this.options.buttonPrevClass);
         this.$nextButton = this.$wrapper.find('.' + this.options.buttonNextClass);
 
