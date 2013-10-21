@@ -58,6 +58,21 @@ table {
     border-spacing: 0;
 }
 
+
+.confirm {
+	height: 35px;
+	width: 220px;
+	margin: 0 0 0 50px;
+	position: absolute;
+	top: 250px;
+	padding-top: 15px;
+	background: #1db77b;
+	color: #FFFFFF;
+	vertical-align: baseline;
+	text-align: center;
+	font: 500 18px/1.0 "stratum2_rgregular", serif;
+	text-transform: uppercase;
+}
 /* ---------------------------------------------------------------------
  Utilities
 ------------------------------------------------------------------------ */
@@ -246,6 +261,7 @@ table {
             filter: grayscale(100%);
 }
 
+.member_br { background-image: url(http://nerdery.com/system/nerds/normal/br.png); }
 .member_cd { background-image: url(http://nerdery.com/system/nerds/normal/cd.png); }
 .member_cj { background-image: url(http://nerdery.com/system/nerds/normal/cj.png); }
 .member_gz { background-image: url(http://nerdery.com/system/nerds/normal/gz.png); }
